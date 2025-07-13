@@ -32,6 +32,9 @@ jobs:
           username: ${{ secrets.GITHUBDEPLOY_USERNAME }}
           key: ${{ secrets.GITHUBDEPLOY_SSH_KEY }}
           script: |
+            echo "HOME is: $HOME"
+            echo "aktuelles Verzeichnis:"
+            pwd
             cd $HOME/projects/LibreChat
             git pull
             docker compose build api
