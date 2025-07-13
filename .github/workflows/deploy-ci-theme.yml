@@ -28,8 +28,8 @@ jobs:
       - name: Deploy via SSH to Server
         uses: appleboy/ssh-action@v1.0.0
         with:
-          host: 85.214.241.142
-          username: GITHUBDEPLOY
+          host: ${{ secrets.GITHUBDEPLOY_HOST }}
+          username: ${{ secrets.GITHUBDEPLOY_USERNAME }}
           key: ${{ secrets.GITHUBDEPLOY_SSH_KEY }}
           script: |
             cd $HOME/projects/LibreChat
