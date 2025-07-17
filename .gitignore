@@ -109,7 +109,7 @@ auth.json
 !client/src/components/Nav/SettingsTabs/Data/
 
 # Exclude CI Folder
-/ci
+# /ci
 
 /.tool-versions
 
