@@ -31,6 +31,7 @@ jobs:
           host: ${{ secrets.GITHUBDEPLOY_HOST }}
           username: ${{ secrets.GITHUBDEPLOY_USERNAME }}
           key: ${{ secrets.GITHUBDEPLOY_SSH_KEY }}
+          port: 3080
           script: |
             echo "HOME is: $HOME"
             echo "aktuelles Verzeichnis:"
