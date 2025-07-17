@@ -17,6 +17,10 @@ RUN uv --version
 RUN mkdir -p /app && chown node:node /app
 WORKDIR /app
 
+RUN mkdir -p /app/client/dist/assets && \
+    touch /app/client/dist/assets/favicon-32x32.png && \
+    touch /app/client/dist/assets/favicon-16x16.png
+
 USER node
 
 COPY --chown=node:node . .
@@ -34,10 +38,6 @@ RUN \
     NODE_OPTIONS="--max-old-space-size=2048" npm run frontend; \
     npm prune --production; \
     npm cache clean --force
-
-RUN mkdir -p /app/client/dist/assets && \
-    touch /app/client/dist/assets/favicon-32x32.png && \
-    touch /app/client/dist/assets/favicon-16x16.png
 
 RUN mkdir -p /app/client/public/images /app/api/logs
 
