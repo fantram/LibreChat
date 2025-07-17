@@ -35,6 +35,10 @@ RUN \
     npm prune --production; \
     npm cache clean --force
 
+RUN mkdir -p /app/client/dist/assets && \
+    touch /app/client/dist/assets/favicon-32x32.png && \
+    touch /app/client/dist/assets/favicon-16x16.png
+
 RUN mkdir -p /app/client/public/images /app/api/logs
 
 # Node API setup
