@@ -2680,4 +2680,4 @@ html {
 }
 
 /* custom ci colors ganz am Ende importieren zum überschreiben */
-@import '../../ci/colors.css';
+@import '../../ci/css/colors.css';
