@@ -23,10 +23,13 @@ services:
         source: ./librechat.yaml
         target: /app/librechat.yaml
       # - ./ci/logo.svg:/app/client/dist/assets/logo.svg
-      - ./ci/vinuity-logo-red.png:/app/client/dist/assets/logo.png
+      # - ./ci/logo.svg:/app/client/public/assets/logo.svg
+      # - ./ci/vinuity-logo-red.png:/app/client/dist/assets/logo.png
+      - ./ci/vinuity-logo-red.png:/app/client/public/assets/logo.png
       # - ./ci/vinuity-logo.svg:/app/client/dist/assets/logo.svg
-      - ./ci/vinuity-fav16.png:/app/client/dist/assets/favicon-32x32.png
-      - ./ci/vinuity-fav16.png:/app/client/dist/assets/favicon-16x16.png
+      # - ./ci/vinuity-fav16.png:/app/client/dist/assets/favicon-32x32.png
+      - ./ci/vinuity-fav16.png:/app/client/public/assets/favicon-32x32.png
+      - ./ci/vinuity-fav16.png:/app/client/public/assets/favicon-16x16.png
 
 # ---------------------------------------------------
 
