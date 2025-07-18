@@ -39,6 +39,6 @@ jobs:
             echo "aktuelles Verzeichnis:"
             pwd
             cd $HOME/projects/LibreChat
-            git pull
+            git pull origin ci-theme
             docker compose build --no-cache api
             docker compose up -d
