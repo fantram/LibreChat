@@ -35,11 +35,6 @@ jobs:
           username: ${{ secrets.GITHUBDEPLOY_USERNAME }}
           key: ${{ secrets.GITHUBDEPLOY_SSH_KEY }}
           script: |
-            echo "HOME is: $HOME"
-            echo "aktuelles Verzeichnis:"
-            pwd
             cd $HOME/projects/LibreChat
-            git reset --hard HEAD
             git pull origin ci-theme
-            docker compose build --no-cache api
-            docker compose up -d
+            docker-compose -f ./deploy-compose.yml up -d
