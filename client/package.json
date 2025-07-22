@@ -6,7 +6,7 @@
   "scripts": {
     "data-provider": "cd .. && npm run build:data-provider",
     "build:file": "cross-env NODE_ENV=production vite build --debug > vite-output.log 2>&1",
-    "ci:copy": "cp -r client/ci/assets/* client/public/assets/",
+    "ci:copy": "cp -r ci/assets/* public/assets/",
     "build": "npm run ci:copy && cross-env NODE_ENV=production vite build",
     "build:ci": "cross-env NODE_ENV=development vite build --mode ci",
     "dev": "cross-env NODE_ENV=development vite",
