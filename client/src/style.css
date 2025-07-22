@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../../ci/css/colors.css';
+/* @import '../../ci/css/colors.css'; */
 
 /* Custom Variables */
 :root {
@@ -167,6 +167,27 @@ html {
   --chart-5: 340 75% 55%;
   --switch-unchecked: 0 0% 40%;
 }
+
+
+/* custom ci colors */
+html {
+  --primary: 352 90% 39%!important;
+  --primary-foreground: 0 0% 98%!important;
+  --secondary: 200 29% 29%!important;
+  --secondary-foreground: 0 0% 9%!important;
+  --accent: 219 63% 70%!important;
+  --accent-foreground: 0 0% 9%!important;
+}
+
+.dark {
+  --primary: 353 70% 60%!important;
+  --primary-foreground: 0 0% 9%!important;
+  --secondary: 0 0% 14.9%!important;
+  --secondary-foreground: 0 0% 98%!important;
+  --accent: 0 0% 14.9%!important;
+  --accent-foreground: 0 0% 98%!important;
+}
+
 .gizmo {
   --text-primary: var(--gizmo-gray-950);
   --text-secondary: var(--gizmo-gray-600);
