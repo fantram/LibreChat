@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '../../ci/css/colors.css';
+
 /* Custom Variables */
 :root {
   --white: #fff;
@@ -2678,6 +2680,3 @@ html {
 .badge-icon {
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
-/* custom ci colors ganz am Ende importieren zum überschreiben */
-@import '../../ci/css/colors.css';
