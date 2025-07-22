@@ -40,7 +40,7 @@ jobs:
             git pull origin ci-theme
             docker-compose -f ./deploy-compose.yml up -d
 
-            cd $HOME/projects/LibreChat
+            # cd $HOME/projects/LibreChat
 
             # # Stelle sicher, dass du auf dem gewünschten Branch bist
             # git checkout ci-theme
