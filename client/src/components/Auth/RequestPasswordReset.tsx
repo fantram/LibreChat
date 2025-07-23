@@ -108,8 +108,8 @@ function RequestPasswordReset() {
             className="
               peer w-full rounded-lg border border-gray-300 bg-transparent px-4 py-3
               text-base text-gray-900 placeholder-transparent transition-all
-              focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20
-              dark:border-gray-700 dark:text-white dark:focus:border-green-500
+              focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-500/20
+              dark:border-gray-700 dark:text-white dark:focus:border-primary
             "
             placeholder="email@example.com"
           />

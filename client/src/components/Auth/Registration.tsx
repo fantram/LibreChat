@@ -71,7 +71,7 @@ const Registration: React.FC = () => {
           aria-invalid={!!errors[id]}
           className="
             webkit-dark-styles transition-color peer w-full rounded-2xl border border-border-light
-            bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-green-500 focus:outline-none
+            bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-primary focus:outline-none
           "
           placeholder=" "
           data-testid={id}
@@ -184,10 +184,10 @@ const Registration: React.FC = () => {
                 type="submit"
                 aria-label="Submit registration"
                 className="
-            w-full rounded-2xl bg-green-600 px-4 py-3 text-sm font-medium text-white
-            transition-colors hover:bg-green-700 focus:outline-none focus:ring-2
+            w-full rounded-2xl bg-primary px-4 py-3 text-sm font-medium text-white
+            transition-colors hover:bg-primary-hover focus:outline-none focus:ring-2
             focus:ring-green-500 focus:ring-offset-2 disabled:opacity-50
-            disabled:hover:bg-green-600 dark:bg-green-600 dark:hover:bg-green-700
+            disabled:hover:bg-green-600 dark:bg-green-600 dark:hover:bg-primary-hover
           "
               >
                 {isSubmitting ? <Spinner /> : localize('com_auth_continue')}
@@ -200,7 +200,7 @@ const Registration: React.FC = () => {
             <a
               href="/login"
               aria-label="Login"
-              className="inline-flex p-1 text-sm font-medium text-green-600 transition-colors hover:text-green-700 dark:text-green-400 dark:hover:text-green-300"
+              className="inline-flex p-1 text-sm font-medium text-primary transition-colors hover:text-primary-hover dark:text-primary dark:hover:text-primary-hover"
             >
               {localize('com_auth_login')}
             </a>

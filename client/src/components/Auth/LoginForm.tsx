@@ -98,7 +98,7 @@ const LoginForm: React.FC<TLoginFormProps> = ({ onSubmit, startupConfig, error, 
               aria-invalid={!!errors.email}
               className="
                 webkit-dark-styles transition-color peer w-full rounded-2xl border border-border-light
-                bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-green-500 focus:outline-none
+                bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-primary focus:outline-none
               "
               placeholder=" "
             />
@@ -133,7 +133,7 @@ const LoginForm: React.FC<TLoginFormProps> = ({ onSubmit, startupConfig, error, 
               aria-invalid={!!errors.password}
               className="
                 webkit-dark-styles transition-color peer w-full rounded-2xl border border-border-light
-                bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-green-500 focus:outline-none
+                bg-surface-primary px-3.5 pb-2.5 pt-3 text-text-primary duration-200 focus:border-primary focus:outline-none
                 "
               placeholder=" "
             />
@@ -166,7 +166,7 @@ const LoginForm: React.FC<TLoginFormProps> = ({ onSubmit, startupConfig, error, 
             type="submit"
             className="
             w-full rounded-2xl bg-primary px-4 py-3 text-sm font-medium text-white
-            transition-colors hover:bg-secondary
+            transition-colors hover:primary-hover
           "
           >
             {localize('com_auth_continue')}

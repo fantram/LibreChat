@@ -172,8 +172,9 @@ html {
 /* custom ci colors */
 html {
   --primary: 352 90% 39%!important;
+  --primary-hover: 352 90% 32%!important;
   --primary-foreground: 0 0% 98%!important;
-  --secondary: 200 29% 29%!important;
+  --secondary: 208 30% 42% !important;
   --secondary-foreground: 0 0% 9%!important;
   --accent: 219 63% 70%!important;
   --accent-foreground: 0 0% 9%!important;
@@ -181,6 +182,7 @@ html {
 
 .dark {
   --primary: 353 70% 60%!important;
+  --primary-hover: 353 70% 68%;
   --primary-foreground: 0 0% 9%!important;
   --secondary: 0 0% 14.9%!important;
   --secondary-foreground: 0 0% 98%!important;
