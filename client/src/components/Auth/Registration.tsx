@@ -187,7 +187,7 @@ const Registration: React.FC = () => {
             w-full rounded-2xl bg-primary px-4 py-3 text-sm font-medium text-white
             transition-colors hover:bg-primary-hover focus:outline-none focus:ring-2
             focus:ring-green-500 focus:ring-offset-2 disabled:opacity-50
-            disabled:hover:bg-secondary dark:bg-green-600 dark:hover:bg-primary-hover
+            disabled:hover:bg-secondary dark:bg-primary dark:hover:bg-primary-hover
           "
               >
                 {isSubmitting ? <Spinner /> : localize('com_auth_continue')}
