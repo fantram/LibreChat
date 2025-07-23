@@ -190,6 +190,8 @@ html {
   --accent-foreground: 0 0% 98%!important;
 }
 
+/* end custom colors */
+
 .gizmo {
   --text-primary: var(--gizmo-gray-950);
   --text-secondary: var(--gizmo-gray-600);
