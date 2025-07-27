@@ -168,7 +168,7 @@ html {
 
 
 /* these are custom ci colors */
-/* html {
+html {
   --primary: 352 90% 39%!important;
   --primary-hover: 352 90% 32%!important;
   --primary-foreground: 0 0% 98%!important;
@@ -186,10 +186,7 @@ html {
   --secondary-foreground: 0 0% 98%!important;
   --accent: 0 0% 14.9%!important;
   --accent-foreground: 0 0% 98%!important;
-} */
-
-@import '../../ci/css/colors.css';
-
+}
 /* end custom colors */
 
 .gizmo {
