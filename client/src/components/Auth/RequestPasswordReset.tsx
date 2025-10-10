@@ -108,8 +108,8 @@ function RequestPasswordReset() {
             className="
               peer w-full rounded-lg border border-gray-300 bg-transparent px-4 py-3
               text-base text-gray-900 placeholder-transparent transition-all
-              focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500/20
-              dark:border-gray-700 dark:text-white dark:focus:border-green-500
+              focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-500/20
+              dark:border-gray-700 dark:text-white dark:focus:border-primary
             "
             placeholder="email@example.com"
           />
@@ -119,8 +119,8 @@ function RequestPasswordReset() {
               absolute -top-2 left-2 z-10 bg-white px-2 text-sm text-gray-600
               transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-base
               peer-placeholder-shown:text-gray-500 peer-focus:-top-2 peer-focus:text-sm
-              peer-focus:text-green-600 dark:bg-gray-900 dark:text-gray-400
-              dark:peer-focus:text-green-500
+              peer-focus:text-primary dark:bg-gray-900 dark:text-gray-400
+              dark:peer-focus:text-primary
             "
           >
             {localize('com_auth_email_address')}
