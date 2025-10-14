@@ -47,6 +47,65 @@
 </p>
 
 
+# CI Customization für LibreChat
+## CI-Farbanpassungen
+
+Im Rahmen des Customizings wurden individuelle CI-Farben direkt in die zentrale `style.css` eingebunden. Diese ersetzen die Standardfarben von LibreChat und sorgen für ein konsistentes Erscheinungsbild im Frontend.
+
+[style.css]
+```css
+/* these are custom ci colors */
+html {
+  --primary: 352 90% 39%!important;
+  --primary-hover: 352 90% 32%!important;
+  --primary-foreground: 0 0% 98%!important;
+  --secondary: 208 30% 42% !important;
+  --secondary-foreground: 0 0% 9%!important;
+  --accent: 219 63% 70%!important;
+  --accent-foreground: 0 0% 9%!important;
+}
+
+.dark {
+  --primary: 353 70% 60%!important;
+  --primary-hover: 353 70% 68%;
+  --primary-foreground: 0 0% 9%!important;
+  --secondary: 0 0% 14.9%!important;
+  --secondary-foreground: 0 0% 98%!important;
+  --accent: 0 0% 14.9%!important;
+  --accent-foreground: 0 0% 98%!important;
+}
+/* end custom colors */
+```
+
+- Die `--primary` Farben werden für Schaltflächen und zentrale Interaktionselemente verwendet.
+- Die `--primary-hover` Variante sorgt für ein visuelles Feedback bei Mausinteraktionen.
+- Die `.dark`-Klasse definiert separate Werte für den Dark Mode.
+
+## Weitere relevante Änderungen im Projekt
+### Build-Prozess angepasst
+- `ci:copy` kopiert CI-spezifische Assets nach `client/public/assets/`
+- Funktioniert sowohl lokal als auch im Deployment
+- Lokal starten: docker compose up -d
+- oder, damit alle container neu gebaut werden:
+- docker compose up -d --build
+
+### Dockerfiles überarbeitet
+- Lokales & Produktions-Dockerfile berücksichtigen CI-Farben & Assets
+- Interne Packages (`data-provider`, `mcp`, `data-schemas`) werden korrekt integriert
+
+### Git-Workflow aktualisiert
+- alle Aenderungen auf dem Branch `ci-0.7.8`
+- Automatisches Deployment mit `--force-recreate`
+- (Testweise auf einem Server von mir)
+
+### Button-Farben und Hover-Zustände
+- Verwendung von Tailwind-Klassen wie:
+  - `bg-[--primary]`
+  - `text-[--primary]`
+  - `hover:bg-[--primary-hover]`
+
+---
+
 # ✨ Features
 
 - 🖥️ **UI & Experience** inspired by ChatGPT with enhanced design and features
